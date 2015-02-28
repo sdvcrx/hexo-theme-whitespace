@@ -1,0 +1,17 @@
+<%- partial('_partial/head') %>
+<body class="collapse-sidebar sidebar-footer">
+  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/navigation', null, {cache: !config.relative_link}) %>
+  <div id="main">
+    <div id="content">
+      <%- body %>
+    </div>
+  </div>
+  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/after-footer') %>
+  <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+  <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+  <% } %>
+</div>
+</body>
+</html>
