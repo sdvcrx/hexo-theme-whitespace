@@ -1,0 +1,16 @@
+<time <% if (class_name) { %>class="<%- class_name %>"<% } %> datetime="<%= date_xml(post.date) %>" itemprop="datePublished">
+<span class="date">
+  <% if (date_format) { %>
+  <span class="month"><%- date(post.date, 'MMM') %></span>
+  <span class="day"><%- date(post.date, 'D') %></span>
+  <span class="year"><%- date(post.date, 'YYYY') %></span>
+  <% } else { %>
+  <span class="date-month"><%- date(post.date, 'MMM') %></span>
+  <span class="date-day"><%- date(post.date, 'D') %></span>, 
+  <span class="date-year"><%- date(post.date, 'YYYY') %></span>
+  <% } %>
+</span>
+<% if (!date_format) { %>
+<span class="time"><%- date(post.date, 'h:mm a') %></span>
+<% } %>
+</time>

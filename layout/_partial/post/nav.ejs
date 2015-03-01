@@ -1,0 +1,10 @@
+<% if (post.prev || post.next) { %>
+<p class="meta">
+  <% if (post.prev) { %>
+  <a class="basic-alignment left" href="<%- url_for(post.prev.path) %>" title="Previous Post: <%= post.prev.title %>">&laquo; <%= post.prev.title %></a>
+  <% } %>
+  <% if (post.next) { %>
+  <a class="basic-alignment right" href="<%- url_for(post.next.path) %>" title="Previous Post: <%= post.next.title %>"><%= post.next.title %> &raquo;</a>
+  <% } %>
+</p>
+<% } %>
