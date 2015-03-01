@@ -1,6 +1,6 @@
 <% if (post.title) { %>
 <article>
-	<h1><a href="<%- post.path %>"><%= post.title %></a></h1>
+	<h1><a href="<%- url_for(post.path) %>"><%= post.title %></a></h1>
 	<%- partial('post/date', {class_name: null, date_format: 'MMM D YYYY'}) %>
 	<% if (post.tags.length || post.categories.length) { %>
 	<footer>
