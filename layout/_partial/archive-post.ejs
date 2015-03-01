@@ -1,0 +1,12 @@
+<% if (post.title) { %>
+<article>
+	<h1><a href="<%- post.path %>"><%= post.title %></a></h1>
+	<%- partial('post/date', {class_name: null, date_format: 'MMM D YYYY'}) %>
+	<% if (post.tags.length || post.categories.length) { %>
+	<footer>
+		<%- partial('post/category') %>
+		<%- partial('post/tag') %>
+	</footer>
+	<% } %>
+</article>
+<% } %>

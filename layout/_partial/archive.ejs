@@ -1,0 +1,41 @@
+<% if (pagination == 2){ %>
+  <div class="blog-index">
+  <% page.posts.each(function(post){ %>
+    <%- partial('article', {post: post, index: true}) %>
+  <% }) %>
+  <% if (page.total > 1){ %>
+    <div class="pagination">
+      <%- paginator({
+        prev_text: '&larr; Older',
+        next_text: 'Newer &rarr;'
+      }) %>
+    </div>
+  <% } %>
+  </div>
+  <aside class="sidebar"></aside>
+<% } else { %>
+  <% var last; %>
+  <% page.posts.each(function(post, i){ %>
+    <% var year = post.date.year(); %>
+    <% if (last != year){ %>
+      <% last = year; %>
+      <div>
+        <article role="article">
+          <header>
+          <% if (is_category()) { %>
+            <h1 class="entry-title">Category: <%= page.category %></h1>
+          <% } else if (is_tag()) { %>
+            <h1 class="entry-title">Tag: <%= page.tag %></h1>
+          <% } else if (is_archive()) { %>
+            <h1 class="entry-title">Blog Archive</h1>
+          <% } %>
+          </header>
+          <div id="blog-archives">
+            <h2><%= year %></h2>
+    <% } %>
+    <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+  <% }) %>
+  <% if (page.posts.length){ %>
+    </div></article></div>
+  <% } %>
+<% } %>
