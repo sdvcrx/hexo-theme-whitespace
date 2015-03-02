@@ -1,0 +1,37 @@
+<% if (index) { %>
+<article>
+<% } else { %>
+<div>
+<article class="hentry" role="article">
+<% } %>
+  <header>
+    <%- partial('post/title') %>
+    <p class="meta">
+      <%- partial('post/date', {class_name: 'entry-date', date_format: null}) %>
+    </p>
+  </header>
+  <% if (post.excerpt && index) { %>
+    <div class="entry-content"><%- post.excerpt %></div>
+  <% } else { %>
+    <div class="entry-content"><%- post.content %></div>
+  <% } %>
+  <footer>
+  <% if (post.excerpt && index && theme.excerpt_link) { %>
+    <a rel="full-article" href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a>
+  <% } else { %>
+    <!--<p class="emta"><%- partial('post/category') %></p>-->
+    <div class="sharing"></div>
+    <%- partial('post/nav') %>
+  <% } %>
+  </footer>
+</article>
+<% if (!index) { %>
+</div>
+<% } %>
+<% if (!index && post.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>
