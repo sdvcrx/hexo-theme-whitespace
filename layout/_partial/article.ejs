@@ -19,7 +19,12 @@
   <% if (post.excerpt && index && theme.excerpt_link) { %>
     <a rel="full-article" href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a>
   <% } else { %>
-    <!--<p class="emta"><%- partial('post/category') %></p>-->
+    <p class="meta">
+      <span class="byline author vcard">Authored by <span class="fn"><%= config.author %></span></span>
+      <%- partial('post/date', {class_name: 'entry-date', date_format: null}) %>
+      <%- partial('post/category') %>
+      <%- partial('post/tag') %>
+    </p>
     <div class="sharing"></div>
     <%- partial('post/nav') %>
   <% } %>
