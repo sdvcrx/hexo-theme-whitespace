@@ -17,6 +17,8 @@ $ git clone https://github.com/banbanchs/hexo-theme-whitespace.git themes/whites
 
 Modify `theme` setting in `_config.yml` to `whitespace`.
 
+中国大陆用户可将 Hexo 的 `_config.yml` 中的 `language` 设置为 `zh-CN` 从而使用国内的CDN
+
 ### Update
 
 ``` bash

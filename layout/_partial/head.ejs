@@ -40,16 +40,17 @@
   <% if (theme.rss) { %>
   <%- feed_tag('theme.rss') %>
   <% } %>
-  <%- js('js/modernizr') %>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script type="text/javascript" src="<%= __('modernizr') %>"></script>
+  <script type="text/javascript" src="<%= __('jquery') %>"></script>
   <%- js('js/script') %>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+  <link href="<%= __('font') %>/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  <link href="<%= __('font') %>/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="<%= __('font') %>/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+  <% if (theme.mathjax) { %>
   <!--- MathJax Configuration -->
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="<%= __('mathjax') %>"></script>
+  <% } %>
   <!-- Google analytics -->
   <%- partial('google-analytics') %>
 </head>
