@@ -22,10 +22,10 @@
   }
   %>
   <title><% if (title) {%><%= title %> | <% } %><%= config.title %></title>
-  <meta name="author" content="<% config.author %>">
+  <meta name="author" content="<%= config.author %>">
 
   <% if (config.description) { %>
-  <meta name="description" content="<% config.description %>">
+  <meta name="description" content="<%= config.description %>">
   <% } %>
 
   <!-- http://t.co/dKP3o1e -->
