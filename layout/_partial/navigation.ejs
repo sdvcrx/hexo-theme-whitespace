@@ -1,4 +1,10 @@
 <nav role="navigation">
+  <%- partial('nav/rss') %>
+  <%- partial('nav/github') %>
+  <%- partial('nav/bitbucket') %>
+  <%- partial('nav/twitter') %>
+  <%- partial('nav/googleplus') %>
+  <%- partial('nav/search') %>
   <ul class="main-navigation">
     <% for (var i in theme.menu) { %>
     <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>

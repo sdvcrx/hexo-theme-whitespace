@@ -10,17 +10,13 @@ fancybox: true
 
 # Sidebar
 sidebar: bottom
-# widgets# :
-# - category
-# - tag
-# - tagcloud
-# - archive
-# - recent_posts
 
 # Miscellaneous
 google_analytics:
 favicon: /favicon.png
+github:
 twitter:
+# eg: google_plus: "12345678".
 google_plus:
-fb_admins:
-fb_app_id:
+# no icon
+bitbucket:
