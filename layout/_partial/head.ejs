@@ -40,17 +40,10 @@
   <% if (theme.rss) { %>
   <%- feed_tag('theme.rss') %>
   <% } %>
-  <script type="text/javascript" src="<%= __('modernizr') %>"></script>
-  <script type="text/javascript" src="<%= __('jquery') %>"></script>
-  <%- js('js/script') %>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
   <link href="<%= __('font') %>/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
   <link href="<%= __('font') %>/css?family=Open+Sans" rel="stylesheet" type="text/css">
   <link href="<%= __('font') %>/css?family=Fjalla+One" rel="stylesheet" type="text/css">
-  <% if (theme.mathjax) { %>
-  <!--- MathJax Configuration -->
-  <script type="text/javascript" src="<%= __('mathjax') %>"></script>
-  <% } %>
   <!-- Google analytics -->
   <%- partial('google-analytics') %>
 </head>

@@ -96,6 +96,35 @@ function wrapFlashVideos() {
   $('iframe[src*=vimeo],iframe[src*=youtube]').wrap('<div class="flash-video">')
 }
 
+/*
+ * From hexo-theme-landscape
+ * Author: @tommy351
+ * License: MIT
+ * source url: https://github.com/hexojs/hexo-theme-landscape/blob/master/source/js/script.js#L89
+ */
+function bindFancybox() {
+  $('#main').each(function(i) {
+    $(this).find("img").each(function() {
+      var alt;
+      if ($(this).parent().hasClass("fancybox")) {
+        return;
+      }
+      alt = this.alt;
+      if (alt) {
+        $(this).after('<span class="caption">' + alt + '</span>');
+      }
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find(".fancybox").each(function() {
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+
+  if ($.fancybox) {
+    $(".fancybox").fancybox();
+  }
+}
+
 $('document').ready(function() {
   testFeatures();
   wrapFlashVideos();
@@ -103,6 +132,7 @@ $('document').ready(function() {
   addCodeLineNumbers();
   getNav();
   addSidebarToggler();
+  bindFancybox();
 });
 
 // iOS scaling bug fix

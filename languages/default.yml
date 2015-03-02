@@ -2,3 +2,5 @@ modernizr: //cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js
 jquery: //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 font: //fonts.googleapis.com
 mathjax: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.5.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+fancyboxcss: //cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css
+fancyboxjs: //cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js

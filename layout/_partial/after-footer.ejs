@@ -13,3 +13,19 @@
   })();
 </script>
 <% } %>
+
+<script type="text/javascript" src="<%= __('modernizr') %>"></script>
+<script type="text/javascript" src="<%= __('jquery') %>"></script>
+
+<% if (theme.fancybox) { %>
+<link rel="stylesheet" href="<%= __('fancyboxcss') %>" type="text/css">
+<script type="text/javascript" src="<%= __('fancyboxjs') %>"></script>
+<%- css('fancybox/jquery.fancybox') %>
+<%- js('fancybox/jquery.fancybox.pack') %>
+<% } %>
+
+<%- js('js/script') %>
+<!--- MathJax Configuration -->
+<% if (theme.mathjax) { %>
+<script type="text/javascript" src="<%= __('mathjax') %>"></script>
+<% } %>
