@@ -430,6 +430,8 @@ aside.sidebar {
 .flex-content, article img, article video, article .flash-video {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: auto;
 }
 
 .basic-alignment.left, article img.left, article video.left, article .left.flash-video {
@@ -1762,4 +1764,12 @@ body > footer p:last-child {
 }
 .page-number {
  padding: 5px;
+}
+span.caption {
+  color: #999;
+  display: block;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  position: relative;
+  text-align: center;
 }
