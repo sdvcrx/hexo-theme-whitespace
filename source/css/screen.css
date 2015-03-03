@@ -1158,7 +1158,7 @@ p.meta + .sharing {
   width: 100%;
 }
 
-.highlight .line-numbers, html .gist .gist-file .gist-syntax .highlight .line_numbers {
+.highlight .line-numbers, .highlight .gutter .line, html .gist .gist-file .gist-syntax .highlight .line_numbers {
   text-align: right;
   font-size: 13px;
   line-height: 1.45em;
@@ -1173,16 +1173,16 @@ p.meta + .sharing {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.highlight .line-numbers span, html .gist .gist-file .gist-syntax .highlight .line_numbers span {
+.highlight .line-numbers span,  .highlight .gutter .line, html .gist .gist-file .gist-syntax .highlight .line_numbers span {
   color: #93a1a1 !important;
 }
 
-figure.code, .gist-file, pre {
+figure.code, figure.highlight, .gist-file, pre {
   -moz-box-shadow: rgba(0, 0, 0, 0.06) 0 0 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0 0 10px;
   box-shadow: rgba(0, 0, 0, 0.06) 0 0 10px;
 }
-figure.code .highlight pre, .gist-file .highlight pre, pre .highlight pre {
+figure.code .highlight pre, figure.highlight pre, .gist-file .highlight pre, pre .highlight pre {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1285,7 +1285,7 @@ p pre code, li pre code {
   border: none;
 }
 
-.pre-code, html .gist .gist-file .gist-syntax .highlight pre, .highlight code {
+.pre-code, html .gist .gist-file .gist-syntax .highlight pre, .highlight code, .highlight .code .line {
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", DotumChe, monospace !important;
   overflow: scroll;
   overflow-y: hidden;
@@ -1552,23 +1552,23 @@ pre::-webkit-scrollbar-thumb:horizontal, .highlight::-webkit-scrollbar-thumb:hor
   background: #000;
 }
 
-figure.code {
+figure.code, figure.highlight {
   background: none;
   padding: 0;
   border: 0;
   margin-bottom: 1.5em;
 }
-figure.code pre {
+figure.code pre, figure.highlight pre {
   margin-bottom: 0;
 }
-figure.code figcaption {
+figure.code figcaption, figure.highlight figcaption {
   position: relative;
 }
 figure.code .highlight {
   margin-bottom: 0;
 }
 
-.code-title, html .gist .gist-file .gist-meta a[href*='#file'], h3.filename, figure.code figcaption {
+.code-title, html .gist .gist-file .gist-meta a[href*='#file'], h3.filename, figure.code figcaption, figure.highlight figcaption {
   text-align: center;
   font-size: 13px;
   line-height: 2em;
@@ -1590,7 +1590,7 @@ figure.code .highlight {
   border-bottom: 0;
 }
 
-.download-source, html .gist .gist-file .gist-meta a[href*=raw], figure.code figcaption a {
+.download-source, html .gist .gist-file .gist-meta a[href*=raw], figure.code figcaption a, figure.highlight figcaption a {
   position: absolute;
   right: .8em;
   text-decoration: none;
@@ -1600,7 +1600,7 @@ figure.code .highlight {
   text-shadow: #cbcccc 0 1px 0;
   padding-left: 3em;
 }
-.download-source:hover, html .gist .gist-file .gist-meta a[href*=raw]:hover, figure.code figcaption a:hover, .download-source:focus, html .gist .gist-file .gist-meta a[href*=raw]:focus, figure.code figcaption a:focus {
+.download-source:hover, html .gist .gist-file .gist-meta a[href*=raw]:hover, figure.code figcaption a:hover, figure.highlight figcaption a:hover, .download-source:focus, html .gist .gist-file .gist-meta a[href*=raw]:focus, figure.code figcaption a:focus, figure.highlight figcaption a:focus {
   text-decoration: underline;
 }
 
