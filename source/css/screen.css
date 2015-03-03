@@ -427,26 +427,26 @@ aside.sidebar {
   border-top: 1px solid #ededed;
 }
 
-.flex-content, article img, article video, article .flash-video {
+.flex-content, article img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: auto;
 }
 
-.basic-alignment.left, article img.left, article video.left, article .left.flash-video {
+.basic-alignment.left, article img.left {
   float: left;
   margin-right: 1.5em;
 }
-.basic-alignment.right, article img.right, article video.right, article .right.flash-video {
+.basic-alignment.right, article img.right {
   float: right;
   margin-left: 1.5em;
 }
-.basic-alignment.center, article img.center, article video.center, article .center.flash-video {
+.basic-alignment.center, article img.center {
   display: block;
   margin: 0 auto 1.5em;
 }
-.basic-alignment.left, article img.left, article video.left, article .left.flash-video, .basic-alignment.right, article img.right, article video.right, article .right.flash-video {
+.basic-alignment.left, article img.left, .basic-alignment.right, article img.right  {
   margin-bottom: .8em;
 }
 
@@ -1031,7 +1031,7 @@ article .feature {
   font-style: italic;
   line-height: 1.3em;
 }
-article img, article video, article .flash-video {
+article img {
   -moz-border-radius: 0.3em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
@@ -1042,28 +1042,6 @@ article img, article video, article .flash-video {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: #fff 0.5em solid;
-}
-article video, article .flash-video {
-  margin: 0 auto 1.5em;
-}
-article video {
-  display: block;
-  width: 100%;
-}
-article .flash-video > div {
-  position: relative;
-  display: block;
-  padding-bottom: 56.25%;
-  padding-top: 1px;
-  height: 0;
-  overflow: hidden;
-}
-article .flash-video > div iframe, article .flash-video > div object, article .flash-video > div embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 article > footer {
   padding-bottom: 2.5em;
@@ -1772,4 +1750,20 @@ span.caption {
   margin-top: 0.5em;
   position: relative;
   text-align: center;
+}
+.entry-content .video-container {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.entry-content .video-container iframe,
+.entry-content .video-container object,
+.entry-content .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
 }
