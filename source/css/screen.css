@@ -988,6 +988,9 @@ article header h1 {
   margin: 0;
   font-weight: 400;
 }
+article header div.entry-gallery + h1 {
+  padding-top: 20px;
+}
 article header h1 a {
   text-decoration: none;
   color: #222;
@@ -1766,4 +1769,36 @@ span.caption {
   width: 100%;
   height: 100%;
   margin-top: 0;
+}
+.entry-gallery {
+  background: #000;
+  position: relative;
+}
+.entry-gallery-photos {
+  position: relative;
+  overflow: hidden;
+}
+.entry-gallery-photos a {
+  height: auto;
+}
+.entry-gallery-img {
+  display: none;
+  max-width: 100%;
+}
+.entry-gallery-img:first-child {
+  display: block;
+  white-space: normal;
+}
+.entry-gallery-img.loaded {
+  position: absolute;
+  display: block;
+}
+.entry-gallery-img img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
 }
