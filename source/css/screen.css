@@ -288,7 +288,7 @@ big {
 }
 
 article blockquote {
-  font-style: italic;
+  font-style: normal;
   position: relative;
   font-size: 1.2em;
   line-height: 1.5em;
@@ -1801,4 +1801,26 @@ span.caption {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
+}
+.entry-content .left {
+  float: left;
+}
+.entry-content .right {
+  float: right;
+}
+.entry-content .pullquote {
+  text-align: left;
+  border: 0;
+  width: 45%;
+  margin: 0;
+}
+.entry-content .pullquote.left {
+  margin-left: 0.5em;
+  margin-right: 1em;
+  padding-left: 0;
+}
+.entry-content .pullquote.right {
+  margin-left: 1em;
+  margin-right: 0.5em;
+  padding-left: 0;
 }
