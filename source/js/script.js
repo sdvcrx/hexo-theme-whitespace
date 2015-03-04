@@ -49,53 +49,6 @@ function testFeatures() {
   }
 }
 
-function addCodeLineNumbers() {
-  if (navigator.appName === 'Microsoft Internet Explorer') { return; }
-  $('div.gist-highlight').each(function(code) {
-    var tableStart = '<table><tbody><tr><td class="gutter">',
-        lineNumbers = '<pre class="line-numbers">',
-        tableMiddle = '</pre></td><td class="code">',
-        tableEnd = '</td></tr></tbody></table>',
-        count = $('.line', code).length;
-    for (var i=1;i<=count; i++) {
-      lineNumbers += '<span class="line-number">'+i+'</span>\n';
-    }
-    var table = tableStart + lineNumbers + tableMiddle + '<pre>'+$('pre', code).html()+'</pre>' + tableEnd;
-    $(code).html(table);
-  });
-}
-
-function flashVideoFallback(){
-  var flashplayerlocation = "/assets/jwplayer/player.swf",
-      flashplayerskin = "/assets/jwplayer/glow/glow.xml";
-  $('video').each(function(i, video){
-    video = $(video);
-    if (!Modernizr.video.h264 && swfobject.getFlashPlayerVersion() || window.location.hash.indexOf("flash-test") !== -1){
-      video.children('source[src$=mp4]').first().map(i, function(source){
-        var src = $(source).attr('src'),
-            id = 'video_'+Math.round(1 + Math.random()*(100000)),
-            width = video.attr('width'),
-            height = parseInt(video.attr('height'), 10) + 30;
-            video.after('<div class="flash-video"><div><div id='+id+'>');
-        swfobject.embedSWF(flashplayerlocation, id, width, height + 30, "9.0.0",
-          { file : src, image : video.attr('poster'), skin : flashplayerskin } ,
-          { movie : src, wmode : "opaque", allowfullscreen : "true" }
-        );
-      });
-      video.remove();
-    }
-  });
-}
-
-function wrapFlashVideos() {
-  $('object').each(function(i, object) {
-    if( $(object).find('param[name=movie]').length ){
-      $(object).wrap('<div class="flash-video">')
-    }
-  });
-  $('iframe[src*=vimeo],iframe[src*=youtube]').wrap('<div class="flash-video">')
-}
-
 /*
  * From hexo-theme-landscape
  * Author: @tommy351
@@ -127,9 +80,6 @@ function bindFancybox() {
 
 $('document').ready(function() {
   testFeatures();
-  wrapFlashVideos();
-  flashVideoFallback();
-  addCodeLineNumbers();
   getNav();
   addSidebarToggler();
   bindFancybox();
