@@ -8,6 +8,7 @@ rss: /atom.xml
 excerpt_link: Read More
 fancybox: true
 mathjax: false
+twitter_sharing: false
 
 # Sidebar
 sidebar: bottom

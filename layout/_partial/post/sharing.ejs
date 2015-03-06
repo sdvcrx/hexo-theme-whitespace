@@ -1,0 +1,7 @@
+<% if (theme.twitter && theme.twitter_sharing) { %>
+  <div class="sharing">
+    <a href="//twitter.com/share" class="twitter-share-button" data-url="<%- url_for(post.path) %>" data-via="<%= theme.twitter %>" data-counturl="<%- url_for(post.path) %>" >Tweet</a>
+  </div>
+<% } else { %>
+  <div class="sharing"></div>
+<% } %>
