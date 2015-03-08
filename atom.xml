@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Lorem ipsum dolor sit amet.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://whitespace.banbanchs.info/"/>
-  <updated>2015-03-02T14:31:08.862Z</updated>
+  <updated>2015-03-08T02:23:03.391Z</updated>
   <id>http://whitespace.banbanchs.info/</id>
   
   <author>
@@ -120,7 +120,7 @@
     <link href="http://whitespace.banbanchs.info/2013/12/25/tag-plugins/"/>
     <id>http://whitespace.banbanchs.info/2013/12/25/tag-plugins/</id>
     <published>2013-12-24T16:14:39.000Z</published>
-    <updated>2015-02-27T11:47:21.000Z</updated>
+    <updated>2015-03-03T09:36:02.000Z</updated>
     <content type="html"><![CDATA[<p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="external">docs</a> for more info.</p>
 <h2 id="Block_Quote">Block Quote</h2>
 <h3 id="Normal_blockquote">Normal blockquote</h3>
@@ -150,7 +150,7 @@
 
 <h2 id="Code_Block">Code Block</h2>
 <h3 id="Normal_code_block">Normal code block</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(<span class="string">'Hello World!'</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(<span class="string">'Hello World!'</span>);</div></pre></td></tr></table></figure>
 
 <h3 id="With_caption">With caption</h3>
 <figure class="highlight"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">array</span>.<span class="keyword">map</span>(callback[, thisArg])</div></pre></td></tr></table></figure>
