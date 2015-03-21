@@ -5,6 +5,7 @@
 <article class="hentry" role="article">
 <% } %>
   <header>
+    <%- partial('post/gallery') %>
     <%- partial('post/title') %>
     <p class="meta">
       <%- partial('post/date', {class_name: 'entry-date', date_format: null}) %>
@@ -28,7 +29,7 @@
       <%- partial('post/tag') %>
     </p>
     <% if (!index) { %>
-      <div class="sharing"></div>
+      <%- partial('post/sharing') %>
       <%- partial('post/nav') %>
     <% } %>
   <% } %>
