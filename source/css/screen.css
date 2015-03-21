@@ -1291,6 +1291,7 @@ p pre code, li pre code {
   overflow-y: hidden;
   display: block;
   padding: .8em;
+  height: 1.45em;
   overflow-x: auto;
   line-height: 1.45em;
   background: #f3f3f3 !important;
