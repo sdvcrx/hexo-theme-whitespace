@@ -1291,7 +1291,6 @@ p pre code, li pre code {
   overflow-y: hidden;
   display: block;
   padding: .8em;
-  height: 1.45em;
   overflow-x: auto;
   line-height: 1.45em;
   background: #f3f3f3 !important;
@@ -1341,6 +1340,9 @@ p pre code, li pre code {
   /* Literal.String.Interpol */
   /* Literal.String.Regex */
   /* Literal.String.Single */
+}
+.highlight .code .line {
+  height: 1.45em;
 }
 .pre-code span, html .gist .gist-file .gist-syntax .highlight pre span, .highlight code span {
   color: #4f4f4f !important;
