@@ -1743,6 +1743,25 @@ body > footer a:hover {
 body > footer p:last-child {
   margin-bottom: 0;
 }
+:not(.highlight) > table {
+  margin: 0 auto 1.5em auto;
+}
+:not(.highlight) > table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+:not(.highlight) > table tr th, :not(.highlight) > table tr td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+:not(.highlight) > table tr th {
+  font-weight: bold;
+}
+:not(.highlight) > table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* hexo */
 .page-number {
  padding: 5px;
 }
