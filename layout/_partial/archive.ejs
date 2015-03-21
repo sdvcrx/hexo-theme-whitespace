@@ -18,9 +18,12 @@
   <% page.posts.each(function(post, i){ %>
     <% var year = post.date.year(); %>
     <% if (last != year){ %>
-      <% last = year; %>
+    	<% if (last != null) { %>
+		    </div></article></div>
+    	<% } %>
       <div>
         <article role="article">
+        <% if (!last) { %>
           <header>
           <% if (is_category()) { %>
             <h1 class="entry-title">Category: <%= page.category %></h1>
@@ -30,8 +33,10 @@
             <h1 class="entry-title">Blog Archive</h1>
           <% } %>
           </header>
+         <% } %>
           <div id="blog-archives">
             <h2><%= year %></h2>
+      <% last = year; %>
     <% } %>
     <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
   <% }) %>
