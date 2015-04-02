@@ -3,9 +3,9 @@
   <title><![CDATA[Theme Test]]></title>
   <subtitle><![CDATA[Lorem ipsum dolor sit amet.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://whitespace.banbanchs.info/"/>
-  <updated>2015-03-21T09:04:29.966Z</updated>
-  <id>http://whitespace.banbanchs.info/</id>
+  <link href="http://whitespace.banbanchs.com/"/>
+  <updated>2015-04-02T10:55:13.898Z</updated>
+  <id>http://whitespace.banbanchs.com/</id>
   
   <author>
     <name><![CDATA[John Doe]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[Images]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/26/images/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/26/images/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/26/images/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/26/images/</id>
     <published>2013-12-26T14:46:49.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This is a image test post.</p>
@@ -36,8 +36,8 @@
   
   <entry>
     <title><![CDATA[]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/25/no-title/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/25/no-title/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/25/no-title/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/25/no-title/</id>
     <published>2013-12-25T14:57:49.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This post doesn’t have a title. Make sure it’s accessible.</p>
@@ -51,8 +51,8 @@
   
   <entry>
     <title><![CDATA[Excerpts]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/25/excerpts/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/25/excerpts/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/25/excerpts/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/25/excerpts/</id>
     <published>2013-12-24T16:23:23.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>The following contents should be invisible in home/archive page.</p>
@@ -70,8 +70,8 @@
   
   <entry>
     <title><![CDATA[Videos]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/25/videos/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/25/videos/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/25/videos/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/25/videos/</id>
     <published>2013-12-24T16:19:15.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This is a video test post.</p>
@@ -90,8 +90,8 @@
   
   <entry>
     <title><![CDATA[Gallery Post]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/25/gallery-post/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/25/gallery-post/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/25/gallery-post/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/25/gallery-post/</id>
     <published>2013-12-24T16:16:18.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This post contains 4 photos:</p>
@@ -117,8 +117,8 @@
   
   <entry>
     <title><![CDATA[Tag Plugins]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/25/tag-plugins/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/25/tag-plugins/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/25/tag-plugins/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/25/tag-plugins/</id>
     <published>2013-12-24T16:14:39.000Z</published>
     <updated>2015-03-03T09:36:02.000Z</updated>
     <content type="html"><![CDATA[<p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="external">docs</a> for more info.</p>
@@ -190,8 +190,8 @@
   
   <entry>
     <title><![CDATA[www.google.com]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/24/link-post-without-title/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/24/link-post-without-title/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/24/link-post-without-title/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/24/link-post-without-title/</id>
     <published>2013-12-24T15:44:13.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open <a href="http://www.google.com/" target="_blank" rel="external">Google</a> in a new tab or window.</p>
@@ -204,8 +204,8 @@
   
   <entry>
     <title><![CDATA[日本語テスト]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/24/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/24/日本語テスト/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/24/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/24/日本語テスト/</id>
     <published>2013-12-24T15:33:26.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This is a Japanese test post.</p>
@@ -230,8 +230,8 @@
   
   <entry>
     <title><![CDATA[中文測試]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/24/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/24/中文測試/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/24/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/24/中文測試/</id>
     <published>2013-12-24T15:31:30.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This is a Chinese test post.</p>
@@ -254,8 +254,8 @@
   
   <entry>
     <title><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/24/long-title/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/24/long-title/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/24/long-title/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/24/long-title/</id>
     <published>2013-12-24T15:31:06.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This post has a long title. Make sure the title displayed right.</p>
@@ -269,8 +269,8 @@
   
   <entry>
     <title><![CDATA[Categories]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/24/categories/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/24/categories/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/24/categories/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/24/categories/</id>
     <published>2013-12-24T15:30:09.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This post contains 3 categories. Make sure your theme can display all of the categories.</p>
@@ -280,18 +280,18 @@
 ]]>
     </summary>
     
-      <category term="Foo" scheme="http://whitespace.banbanchs.info/categories/Foo/"/>
+      <category term="Foo" scheme="http://whitespace.banbanchs.com/categories/Foo/"/>
     
-      <category term="Bar" scheme="http://whitespace.banbanchs.info/categories/Foo/Bar/"/>
+      <category term="Bar" scheme="http://whitespace.banbanchs.com/categories/Foo/Bar/"/>
     
-      <category term="Baz" scheme="http://whitespace.banbanchs.info/categories/Foo/Bar/Baz/"/>
+      <category term="Baz" scheme="http://whitespace.banbanchs.com/categories/Foo/Bar/Baz/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Link Post]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/24/link-post/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/24/link-post/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/24/link-post/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/24/link-post/</id>
     <published>2013-12-24T15:30:04.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>This is a link post. Clicking on the link should open <a href="http://www.google.com/" target="_blank" rel="external">Google</a> in a new tab or window.</p>
@@ -304,8 +304,8 @@
   
   <entry>
     <title><![CDATA[Tags]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/24/tags/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/24/tags/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/24/tags/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/24/tags/</id>
     <published>2013-12-24T15:29:53.000Z</published>
     <updated>2015-03-02T05:02:38.000Z</updated>
     <content type="html"><![CDATA[<p>This post contains 3 tags. Make sure your theme can display all of the tags.</p>
@@ -315,18 +315,18 @@
 ]]>
     </summary>
     
-      <category term="Foo" scheme="http://whitespace.banbanchs.info/tags/Foo/"/>
+      <category term="Foo" scheme="http://whitespace.banbanchs.com/tags/Foo/"/>
     
-      <category term="Bar" scheme="http://whitespace.banbanchs.info/tags/Bar/"/>
+      <category term="Bar" scheme="http://whitespace.banbanchs.com/tags/Bar/"/>
     
-      <category term="Baz" scheme="http://whitespace.banbanchs.info/tags/Baz/"/>
+      <category term="Baz" scheme="http://whitespace.banbanchs.com/tags/Baz/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Elements]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/24/elements/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/24/elements/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/24/elements/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/24/elements/</id>
     <published>2013-12-24T15:29:08.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don’t forget to redefine the style by yourself.</p>
@@ -399,8 +399,8 @@
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://whitespace.banbanchs.info/2013/12/24/hello-world/"/>
-    <id>http://whitespace.banbanchs.info/2013/12/24/hello-world/</id>
+    <link href="http://whitespace.banbanchs.com/2013/12/24/hello-world/"/>
+    <id>http://whitespace.banbanchs.com/2013/12/24/hello-world/</id>
     <published>2013-12-24T09:49:32.000Z</published>
     <updated>2015-02-27T11:47:21.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank" rel="external">documentation</a> to learn how to use.</p>

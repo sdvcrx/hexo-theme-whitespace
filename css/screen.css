@@ -363,24 +363,24 @@ body {
   position: relative;
   margin: 0 auto;
 }
-body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section {
+body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section, #comments > div {
   margin-left: 18px;
   margin-right: 18px;
 }
 @media only screen and (min-width: 480px) {
-  body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section {
+  body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section, #comments > div {
     margin-left: 25px;
     margin-right: 25px;
   }
 }
 @media only screen and (min-width: 768px) {
-  body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section {
+  body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section, #comments > div {
     margin-left: 35px;
     margin-right: 35px;
   }
 }
 @media only screen and (min-width: 992px) {
-  body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section {
+  body > header, body > nav, body > footer, body #content > article, body #content > div > article, body #content > div > section, #comments > div {
     margin-left: 55px;
     margin-right: 55px;
   }
@@ -1340,6 +1340,9 @@ p pre code, li pre code {
   /* Literal.String.Interpol */
   /* Literal.String.Regex */
   /* Literal.String.Single */
+}
+.highlight .code .line {
+  height: 1.45em;
 }
 .pre-code span, html .gist .gist-file .gist-syntax .highlight pre span, .highlight code span {
   color: #4f4f4f !important;
