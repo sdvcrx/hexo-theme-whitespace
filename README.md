@@ -5,7 +5,7 @@
 [Whitespace](https://github.com/lucaslew/whitespace) hexo port.
 This theme lets your content take the center stage of your blog.
 
-[DEMO](http://whitespace.banbanchs.com/)
+[DEMO](https://banbanchs.github.io/hexo-theme-whitespace/)
 
 ## Installation ##
 
